@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.1.2 (Python 3.7.0 on win32)" generated="20191216 15:11:58.305" rpa="false">
+<suite id="s1" name="Akuafoil Test" source="C:\Users\Gandhi Buddha.GANDHIB-1LL\PycharmProjects\Automation_One\TestCases\akuafoil_test.robot">
+<test id="s1-t1" name="LoginTest">
+<kw name="Open my Browser" library="Keywords" type="setup">
+<arguments>
+<arg>${SiteUrl}</arg>
+<arg>${Browser}</arg>
+</arguments>
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${SiteUrl}</arg>
+<arg>${Browser}</arg>
+</arguments>
+<msg timestamp="20191216 15:12:06.216" level="INFO">Opening browser 'Chrome' to base url 'https://4over.com/'.</msg>
+<status status="PASS" starttime="20191216 15:12:06.215" endtime="20191216 15:12:34.542"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20191216 15:12:34.542" endtime="20191216 15:12:38.689"></status>
+</kw>
+<status status="PASS" starttime="20191216 15:12:06.201" endtime="20191216 15:12:38.690"></status>
+</kw>
+<kw name="Enter UserName" library="Keywords">
+<arguments>
+<arg>${user}</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${txt_login_username}</arg>
+<arg>${UserName}</arg>
+</arguments>
+<msg timestamp="20191216 15:12:38.697" level="INFO">Typing text 'gandhib@4over.com' into text field 'css:input#txtEmail'.</msg>
+<status status="PASS" starttime="20191216 15:12:38.695" endtime="20191216 15:12:39.454"></status>
+</kw>
+<status status="PASS" starttime="20191216 15:12:38.692" endtime="20191216 15:12:39.455"></status>
+</kw>
+<kw name="Enter Password" library="Keywords">
+<arguments>
+<arg>${pwd}</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${txt_login_password}</arg>
+<arg>${Password}</arg>
+</arguments>
+<msg timestamp="20191216 15:12:39.457" level="INFO">Typing text 'trade1@' into text field 'xpath://input[@type='password'][@name='password']'.</msg>
+<status status="PASS" starttime="20191216 15:12:39.457" endtime="20191216 15:12:39.714"></status>
+</kw>
+<status status="PASS" starttime="20191216 15:12:39.456" endtime="20191216 15:12:39.715"></status>
+</kw>
+<kw name="Click SignIn" library="Keywords">
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>${btn_signIn}</arg>
+</arguments>
+<msg timestamp="20191216 15:12:39.720" level="INFO">Clicking button 'xpath://input[@type='submit'][@id='btnLogin']'.</msg>
+<status status="PASS" starttime="20191216 15:12:39.718" endtime="20191216 15:12:39.902"></status>
+</kw>
+<status status="PASS" starttime="20191216 15:12:39.717" endtime="20191216 15:12:39.903"></status>
+</kw>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<arguments>
+<arg>3 seconds</arg>
+</arguments>
+<status status="PASS" starttime="20191216 15:12:39.904" endtime="20191216 15:12:39.905"></status>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>25 seconds</arg>
+</arguments>
+<status status="PASS" starttime="20191216 15:12:39.905" endtime="20191216 15:12:42.909"></status>
+</kw>
+<kw name="Click on the aquafoil" library="Keywords">
+<kw name="Click Link" library="SeleniumLibrary">
+<doc>Clicks a link identified by ``locator``.</doc>
+<arguments>
+<arg>${click_aku}</arg>
+</arguments>
+<msg timestamp="20191216 15:12:42.912" level="INFO">Clicking link 'xpath://a[text()='Akuafoil']'.</msg>
+<status status="PASS" starttime="20191216 15:12:42.911" endtime="20191216 15:12:52.385"></status>
+</kw>
+<status status="PASS" starttime="20191216 15:12:42.910" endtime="20191216 15:12:52.386"></status>
+</kw>
+<kw name="select product_category" library="Keywords">
+<arguments>
+<arg>${prod_category1}</arg>
+</arguments>
+<kw name="Select From List By Label" library="SeleniumLibrary">
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<arguments>
+<arg>${prod_category}</arg>
+<arg>${prod_category1}</arg>
+</arguments>
+<msg timestamp="20191216 15:12:52.395" level="INFO">Selecting options from selection list 'name:Product Category' by label Announcement Cards.</msg>
+<status status="PASS" starttime="20191216 15:12:52.393" endtime="20191216 15:13:15.539"></status>
+</kw>
+<status status="PASS" starttime="20191216 15:12:52.391" endtime="20191216 15:13:15.540"></status>
+</kw>
+<kw name="select size" library="Keywords">
+<arguments>
+<arg>${size1}</arg>
+</arguments>
+<kw name="Select From List By Index" library="SeleniumLibrary">
+<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
+<arguments>
+<arg>${size}</arg>
+<arg>${size1}</arg>
+</arguments>
+<msg timestamp="20191216 15:13:15.543" level="INFO">Selecting options from selection list 'css:select#facet-34f407f8-0b50-4227-9378-10fddefbe596' by index 1.</msg>
+<status status="PASS" starttime="20191216 15:13:15.542" endtime="20191216 15:13:42.848"></status>
+</kw>
+<status status="PASS" starttime="20191216 15:13:15.541" endtime="20191216 15:13:42.848"></status>
+</kw>
+<kw name="select coating" library="Keywords">
+<arguments>
+<arg>${coating1}</arg>
+</arguments>
+<kw name="Select From List By Label" library="SeleniumLibrary">
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<arguments>
+<arg>${coating}</arg>
+<arg>${coating1}</arg>
+</arguments>
+<msg timestamp="20191216 15:13:42.853" level="INFO">Selecting options from selection list 'css:select#facet-26ca0df3-0682-4f37-8979-409868e2df2d' by label Spot UV.</msg>
+<status status="PASS" starttime="20191216 15:13:42.851" endtime="20191216 15:14:04.181"></status>
+</kw>
+<status status="PASS" starttime="20191216 15:13:42.850" endtime="20191216 15:14:04.182"></status>
+</kw>
+<kw name="select spot UV sides" library="Keywords">
+<arguments>
+<arg>${spot_uv_sides1}</arg>
+</arguments>
+<kw name="Select From List By Index" library="SeleniumLibrary">
+<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
+<arguments>
+<arg>${spot_uv_sides}</arg>
+<arg>${spot_uv_sides1}</arg>
+</arguments>
+<msg timestamp="20191216 15:14:04.186" level="INFO">Selecting options from selection list 'css:select#facet-86c459f5-b6fc-4125-8b79-4d5ef12a2a13' by index 1.</msg>
+<status status="PASS" starttime="20191216 15:14:04.184" endtime="20191216 15:14:31.467"></status>
+</kw>
+<status status="PASS" starttime="20191216 15:14:04.183" endtime="20191216 15:14:31.467"></status>
+</kw>
+<kw name="select colorspec" library="Keywords">
+<arguments>
+<arg>${colorspec1}</arg>
+</arguments>
+<kw name="Select From List By Index" library="SeleniumLibrary">
+<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
+<arguments>
+<arg>${colorspec}</arg>
+<arg>${colorspec1}</arg>
+</arguments>
+<msg timestamp="20191216 15:14:31.471" level="INFO">Selecting options from selection list 'xpath://select[@name='Colorspec']' by index 1.</msg>
+<status status="PASS" starttime="20191216 15:14:31.470" endtime="20191216 15:14:58.838"></status>
+</kw>
+<status status="PASS" starttime="20191216 15:14:31.469" endtime="20191216 15:14:58.840"></status>
+</kw>
+<kw name="Set Selenium Timeout" library="SeleniumLibrary">
+<doc>Sets the timeout that is used by various keywords.</doc>
+<arguments>
+<arg>15 seconds</arg>
+</arguments>
+<status status="PASS" starttime="20191216 15:14:58.843" endtime="20191216 15:15:01.852"></status>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is enabled.</doc>
+<arguments>
+<arg>${add_to_cart}</arg>
+</arguments>
+<msg timestamp="20191216 15:15:04.957" level="INFO">Suppressing StaleElementReferenceException from Selenium.</msg>
+<msg timestamp="20191216 15:15:08.217" level="INFO">Suppressing StaleElementReferenceException from Selenium.</msg>
+<msg timestamp="20191216 15:15:11.472" level="INFO">Suppressing StaleElementReferenceException from Selenium.</msg>
+<status status="PASS" starttime="20191216 15:15:01.854" endtime="20191216 15:15:20.762"></status>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath:(//div[@class='item-price'])[1]</arg>
+</arguments>
+<assign>
+<var>${a}</var>
+</assign>
+<msg timestamp="20191216 15:15:27.027" level="INFO">${a} = $220.61</msg>
+<status status="PASS" starttime="20191216 15:15:20.763" endtime="20191216 15:15:27.028"></status>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath:(//div[@class='item-price'])[2]</arg>
+</arguments>
+<assign>
+<var>${b}</var>
+</assign>
+<msg timestamp="20191216 15:15:33.136" level="INFO">${b} = $9.55</msg>
+<status status="PASS" starttime="20191216 15:15:27.029" endtime="20191216 15:15:33.136"></status>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of element identified by ``locator``.</doc>
+<arguments>
+<arg>css:dd.pricing-available</arg>
+</arguments>
+<assign>
+<var>${total}</var>
+</assign>
+<msg timestamp="20191216 15:15:39.231" level="INFO">${total} = $230.16</msg>
+<status status="PASS" starttime="20191216 15:15:33.138" endtime="20191216 15:15:39.231"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${a}+${b} is summation and ${total} is the total at the bottom</arg>
+</arguments>
+<status status="PASS" starttime="20191216 15:15:39.232" endtime="20191216 15:15:39.234"></status>
+</kw>
+<kw name="click on add_to_cart" library="Keywords">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${add_to_cart}</arg>
+</arguments>
+<msg timestamp="20191216 15:15:39.236" level="INFO">Clicking element 'xpath://button[@id='btnNext']'.</msg>
+<status status="PASS" starttime="20191216 15:15:39.236" endtime="20191216 15:15:45.470"></status>
+</kw>
+<status status="PASS" starttime="20191216 15:15:39.235" endtime="20191216 15:15:45.471"></status>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>${uploader_page_txt}</arg>
+</arguments>
+<msg timestamp="20191216 15:16:04.396" level="INFO">Current page contains text 'Upload Files'.</msg>
+<status status="PASS" starttime="20191216 15:15:45.472" endtime="20191216 15:16:04.396"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>Uploader page contains ${uploader_page_txt}</arg>
+</arguments>
+<status status="PASS" starttime="20191216 15:16:04.399" endtime="20191216 15:16:04.400"></status>
+</kw>
+<kw name="Get Title" library="SeleniumLibrary">
+<doc>Returns the title of current page.</doc>
+<assign>
+<var>${title}</var>
+</assign>
+<msg timestamp="20191216 15:16:07.418" level="INFO">${title} = 4over, LLC | Super Trade Printer</msg>
+<status status="PASS" starttime="20191216 15:16:04.401" endtime="20191216 15:16:07.418"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>the title of the page is ${title}</arg>
+</arguments>
+<status status="PASS" starttime="20191216 15:16:07.420" endtime="20191216 15:16:07.421"></status>
+</kw>
+<kw name="${i} IN RANGE [ 1 | 4 ]" type="for">
+<kw name="${i} = 1" type="foritem">
+<kw name="upload the file_ak_front" library="Keywords">
+<arguments>
+<arg>${upload1}</arg>
+</arguments>
+<kw name="Choose File" library="SeleniumLibrary">
+<doc>Inputs the ``file_path`` into file input field ``locator``.</doc>
+<arguments>
+<arg>${upload_ak_front}</arg>
+<arg>${upload1}</arg>
+</arguments>
+<status status="PASS" starttime="20191216 15:16:07.424" endtime="20191216 15:16:13.605"></status>
+</kw>
+<status status="PASS" starttime="20191216 15:16:07.423" endtime="20191216 15:16:13.607"></status>
+</kw>
+<status status="PASS" starttime="20191216 15:16:07.422" endtime="20191216 15:16:13.607"></status>
+</kw>
+<kw name="${i} = 2" type="foritem">
+<kw name="upload the file_ak_front" library="Keywords">
+<arguments>
+<arg>${upload1}</arg>
+</arguments>
+<kw name="Choose File" library="SeleniumLibrary">
+<doc>Inputs the ``file_path`` into file input field ``locator``.</doc>
+<arguments>
+<arg>${upload_ak_front}</arg>
+<arg>${upload1}</arg>
+</arguments>
+<status status="PASS" starttime="20191216 15:16:13.611" endtime="20191216 15:16:19.747"></status>
+</kw>
+<status status="PASS" starttime="20191216 15:16:13.609" endtime="20191216 15:16:19.748"></status>
+</kw>
+<status status="PASS" starttime="20191216 15:16:13.608" endtime="20191216 15:16:19.748"></status>
+</kw>
+<kw name="${i} = 3" type="foritem">
+<kw name="upload the file_ak_front" library="Keywords">
+<arguments>
+<arg>${upload1}</arg>
+</arguments>
+<kw name="Choose File" library="SeleniumLibrary">
+<doc>Inputs the ``file_path`` into file input field ``locator``.</doc>
+<arguments>
+<arg>${upload_ak_front}</arg>
+<arg>${upload1}</arg>
+</arguments>
+<status status="PASS" starttime="20191216 15:16:19.751" endtime="20191216 15:16:25.920"></status>
+</kw>
+<status status="PASS" starttime="20191216 15:16:19.749" endtime="20191216 15:16:25.921"></status>
+</kw>
+<status status="PASS" starttime="20191216 15:16:19.748" endtime="20191216 15:16:25.921"></status>
+</kw>
+<status status="PASS" starttime="20191216 15:16:07.422" endtime="20191216 15:16:25.922"></status>
+</kw>
+<status status="PASS" starttime="20191216 15:12:06.198" endtime="20191216 15:16:25.924" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20191216 15:11:58.376" endtime="20191216 15:16:25.967"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" id="s1" name="Akuafoil Test">Akuafoil Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
